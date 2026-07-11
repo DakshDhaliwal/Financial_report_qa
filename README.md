@@ -83,14 +83,14 @@ streamlit run app.py
 
 ## 🗂️ Project Structure
 
-financial-report-qa/
-├── app.py              # Streamlit UI + main pipeline
-├── query_router.py     # Classifies questions as numeric or narrative
-├── requirements.txt    # All dependencies
-├── .streamlit/
-│   └── config.toml     # Streamlit config
-├── .env                # API keys (not uploaded)
-└── README.md
+| File | Purpose |
+|---|---|
+| `app.py` | Streamlit UI + main pipeline |
+| `query_router.py` | Classifies questions as numeric or narrative |
+| `requirements.txt` | All dependencies |
+| `.streamlit/config.toml` | Streamlit configuration |
+| `.env` | API keys (not uploaded to GitHub) |
+| `README.md` | Project documentation |
 
 ---
 
