@@ -23,20 +23,14 @@ Don't have a financial PDF? Use the same one we built this with:
 
 ## 🧠 How It Works
 
-PDF Upload
-↓
-Text + Table Extraction (PyMuPDF + pdfplumber)
-↓
-Chunking + Embeddings (sentence-transformers)
-↓
-Vector Storage (ChromaDB)
-↓
-Query Router → Numeric → Table chunks
-→ Narrative → Text chunks
-↓
-LLM Answer with Page Citations (Groq LLaMA 3.3 70B)
-
----
+| Step | Component |
+|---|---|
+| 1️⃣ Upload PDF | PyMuPDF + pdfplumber extract text and tables |
+| 2️⃣ Chunking | Text split into 500-word chunks, tables as JSON |
+| 3️⃣ Embeddings | sentence-transformers converts chunks to vectors |
+| 4️⃣ Storage | ChromaDB stores all vectors locally |
+| 5️⃣ Query Router | Numeric questions → table chunks, Narrative → text chunks |
+| 6️⃣ LLM Answer | Groq LLaMA 3.3 70B generates answer with page citations |
 
 ## ✨ Features
 
