@@ -216,3 +216,12 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Project specific
+my_Fenv/
+chroma_db/
+temp_report.pdf
+text_output.json
+tables_output.json
+*.json
+*.pdf
