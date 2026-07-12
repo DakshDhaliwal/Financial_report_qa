@@ -9,7 +9,7 @@ A RAG-based chatbot that lets you chat with financial PDFs — annual reports,
 ![Groq](https://img.shields.io/badge/Groq-LLaMA_3.3_70B-orange)
 
 ## 🔗 Live Demo
-👉 [Try it here](YOUR_DEPLOYMENT_LINK) ← add this after Day 7
+👉 [Try it here](https://financialreportapp-dr9hzevobhz9yyzeyva4xw.streamlit.app/)
 
 ## 📄 Sample Report to Test With
 Don't have a financial PDF? Use the same one we built this with:
