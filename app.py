@@ -3,13 +3,11 @@ import streamlit as st
 import os
 import fitz
 import pdfplumber
-from dotenv import load_dotenv
 from sentence_transformers import SentenceTransformer
 import chromadb
 from groq import Groq
 from query_router import classify_query
 
-load_dotenv()
 
 # ── Page config ───────────────────────────────────────
 st.set_page_config(
@@ -51,7 +49,7 @@ st.markdown("""
 @st.cache_resource
 def load_models():
     embedding_model = SentenceTransformer("all-MiniLM-L6-v2")
-    llm = Groq(api_key=os.getenv("GROQ_API_KEY"))
+    llm = Groq(api_key=st.secrets["GROQ_API_KEY"])
     return embedding_model, llm
 
 embedding_model, llm = load_models()
