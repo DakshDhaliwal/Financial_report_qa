@@ -44,7 +44,7 @@ Don't have a financial PDF? Use the same one we built this with:
 
 ## 📸 Screenshots
 
-> Add a screenshot of your app here after deployment
+![App Screenshot](assets/screenshot.png)
 
 ---
 
